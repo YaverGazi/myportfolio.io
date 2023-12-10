@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>YaverGazi Portfoliyo</title>
+    <meta name="viewport" content="width=device-width">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style78.css">
+    <link rel="stylesheet" href="line-awesome.fig">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <style>
+        img {
+            max-width: 100%;
+            border-radius: 50%;
+        }
+
+        @media (min-width:992px) {
+            .navbar {
+                min-height: 100vh;
+                min-width: 30vh;
+                width: 100px;
+                background-image: linear-gradient(rgba(3, 63, 71, 0.9), rgba(3, 63, 71, 0.9)), url(https://ipt.imgix.net/202004/x/0/lofoten-216.jpg);
+                background-size: cover;
+                background-position: center;
+
+
+
+            }
+
+            .navbar-brand img {
+                border: 8px solid yellow;
+            }
+
+
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: darkcyan;
+
+        }
+
+        .full-hight {
+            min-height: 100vh;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-top: 80px;
+            padding-bottom: 80px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+        }
+
+
+        .shadow-effect {
+
+            transition: all 0.5s;
+        }
+
+        .shadow-effect:hover {
+            box-shadow: -6px 6px 0 0 yellow;
+
+        }
+
+       .navbar .nav-link {
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+        .navbar .nav-link:hover {
+            color: lightyellow;
+        }
+
+        .navbar {
+            background-color: darkcyan;
+        }
+
+
+        #navbar1 .nav-link.active {
+            color: yellow;
+        }
+
+
+        #content-wraper {
+            padding-left: 240px;
+
+        }
+
+        a {
+            text-decoration: none;
+
+        }
+
+
+        .btn {
+            padding: 12px 12px;
+            font-weight: 700;
+            margin-right: 10px;
+        }
+
+        .btn-brand {
+            background-color: yellow;
+
+
+        }
+
+        .btn-brand:hover,
+        .btn-brand:focus {
+
+            background-color: darkslategray;
+            border-color: black;
+        }
+
+        .link-custam {
+        font-weight: 700;
+        position: relative;
+        color: white;
+        }
+
+        .link-custam:hover {
+        color: yellow;
+        }
+
+        .link-custam::after {
+        content: "";
+        height: 2px;
+        width: 0%;
+        position: absolute;
+        top: 110%;
+        left: 0;
+        background: yellow;
+        transition: all 0.4s;
+        }
+
+        .link-custam:hover::after {
+        width: 100%;
+        }
+        .inbox {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 32px;
+            background-color: yellow;
+        }
+
+
+        .card-custam .card-custam-img {
+            overflow: hidden;
+        }
+
+        .card-custam .card-custam-img img {
+            transition: all 0.5s ease;
+
+        }
+
+        .card-custam:hover .card-custam-img img {
+            transform: scale(1.1);
+            box-shadow: -6px 6px 0 0 red;
+
+
+        }
+
+        .card-custam-contenter{
+          
+            padding-bottom: 23px;
+        }
+
+        .card-custam-contente{
+          
+          padding-bottom: 18px;
+      }
+      
+
+        #home{
+            background-image: url(backgraud1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+          
+            background-position:right;
+     
+            border-radius: 10px;
+        height: 100vh;
+         width: 100%;
+         margin-top: 5px;
+        }
+
+ 
+        .work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+ 
+}
+
+
+.work img{
+    border-radius: 10px;
+display: block;
+transition: transform 0.5s;
+}
+
+
+.layer{
+    width: 100%;
+    height: 0;
+ background: linear-gradient(rgba(0,0,0,0), darkcyan);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size:14px ;
+    transition: height 0.5s;
+
+}
+
+.layer h3{
+    font-weight: 500px;
+    margin-bottom: 20px;
+}
+
+.layer a{
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+
+}
+
+.work:hover img{
+  transform: scale(1.1);  
+}
+
+
+.work:hover .layer{
+    height: 100%;
+}
+
+
+.fa-brands{
+    color: #fff;
+    font-size: 25px;
+    padding-left: 3px;
+    transition: 0.5s ease-in;
+}
+
+.fa-brands:hover{
+    color: seagreen;
+}
+/* ................animation */
+.letter-animation span {
+    font-size: 36px;
+    font-weight: bold;
+    opacity: 0;
+    animation: showLetter 1s forwards;
+}
+
+@keyframes showLetter {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.letter-animation span:nth-child(1) { animation-delay: 0.1s; }
+.letter-animation span:nth-child(2) { animation-delay: 0.2s; }
+.letter-animation span:nth-child(3) { animation-delay: 0.3s; }
+.letter-animation span:nth-child(4) { animation-delay: 0.4s; }
+.letter-animation span:nth-child(5) { animation-delay: 0.5s; }
+.letter-animation span:nth-child(6) { animation-delay: 0.6s; }
+.letter-animation span:nth-child(7) { animation-delay: 0.7s; }
+.letter-animation span:nth-child(8) { animation-delay: 0.8s; }
+.letter-animation span:nth-child(9) { animation-delay: 0.9s; }
+
+
+
+    </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar1" data-bs-offset="50">
+
+
+    <nav id="navbar1" class="navbar navbar-dark navbar-expand-sm  p-3 fixed-top">
+        <div class="container flex-lg-column">
+            <a href="#" class="navbar-brand mb-lg-4 mx-lg-auto "><span class="fw-bold h3 d-block d-lg-none">Yaver Gazi</span>
+                <img class="rounded-circle d-lg-block d-none" style="width: 100px; height: 100px;" src="img1.jpg" alt="">
+            </a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#best">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="best">
+                <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link ">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#service" class="nav-link">service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#work" class="nav-link">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href="#skill" class="nav-link">SKILLS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">contact</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div id="content-wraper" class="text-white">
+        <section id="home" class="full-hight px-lg-5 ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10">
+                        <h1 class="display-4 fw-bold letter-animation " data-aos="fade-up">
+                            <span>  I'm</span>
+                            <span> a Web Developer</span>
+                            <span>from</span>
+                            <span>Bielefel ,Germany</span>
+                      </h1>
+                        <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">Hi,I am <span style="color: red; font-weight: 900;" >Y</span>aver Gazi and i craft high-performing and delightful experiences tailored and conversion foucsed</p>
+                        <div data-aos="fade-up" data-aos-delay="300">
+                            <a href="#work" class="btn btn-brand  "> Expore my work</a>
+                            <a href="#" class="link-custam">coll:(171)8263545</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </section>
+     
+          
+        <section id="service" class="full-hight px-lg-5 ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h6 class="text-brand">service</h6>
+                        <h1 class=" text-white ">
+                            Service that I provide </h1>
+                    </div>
+                </div>
+
+              <div class="row"> 
+                 <div class="col-md-6 " data-aos="fade-up">
+                        <div class="sercive bg-dark p-4 rounded-3  shadow-effect">
+                            <div class="inbox rounded-3">
+                                <i class="fa-brands fa-app-store"></i>
+
+                            </div>
+                         
+                            <h4  class="mt-4 mb-4">App Design</h4>
+                            <p>
+                                I am a dedicated app designer and user-centric design for compelling and intuitive mobile experiences.</p>
+                      
+                        </div>
+                    </div>
+                 <!-- <div class="col-md-4  " data-aos="fade-up" data-aos-delay="300">
+                    
+                    </div>  -->
+                    <div class="col-md-6  " data-aos="fade-up" data-aos-delay="600">
+                        <div class="sercive bg-dark p-4 rounded-3  shadow-effect">
+                            <div class="inbox rounded-3">
+                                <i class="fa-solid fa-laptop-code"></i>
+
+                            </div>
+                            <h4 class="mt-4 mb-4">Web Design</h4>
+                            <p>I am a creative and innovative web designer, known for my aesthetic sensibility and user-friendly designs.</p>
+                            <!-- <a href="#" class="link-custam">Read more</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="work" class="full-hight px-lg-5">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-8">
+                        <h6 class="text-brand">work</h6>
+                        <h1 class=" text-white ">
+                          My works </h1>
+                    </div>
+                </div>
+                <div class="row gy-4 ">
+                    <div class="col-lg-6">
+                        <div class="card-custam rounded-3 bg-info shadow-effect mb-2" data-aos="fade-up">
+                            <div class="card-custam-img rounded-3 "><img class=" img-fluid d-block rounded-3 " style="max-width: 100%;" src="PORTimg.png" alt="">
+                            </div>
+                            <div class="card-custam-content">
+                              
+                                <h4> Number Counting Animation </h4>
+                                <a href="#" class="link-custam">HTML,CSS,JS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card-custam rounded-3 bg-info shadow-effect mb-2" data-aos="fade-up" data-aos-delay="300">
+                            <div class="card-custam-img rounded-3 "><img class=" img-fluid d-block rounded-3 " style="max-width: 100%;" src="PORTimg3.png" alt="">
+                            </div>
+                            <div class="card-custam-contente">
+                                <h4>Image Generator </h4>
+                           
+                                <a href="#" class="link-custam">HTML,CSS,JS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card-custam rounded-3 bg-info shadow-effect mb-2" data-aos="fade-up" data-aos-delay="400">
+                            <div class="card-custam-img rounded-3 "><img class=" img-fluid d-block rounded-3 " style="max-width: 100%; padding-bottom: 10px;" src="PORTimg6.png" alt="">
+                            </div>
+                            <div class="card-custam-contenter">
+                                <h4>Personal Portfolio Website </h4>
+                               
+                                <a href="#"  class="link-custam">HTML,CSS,Bootstrap5</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card-custam rounded-3 bg-info shadow-effect mb-2" data-aos="fade-up" data-aos-delay="500">
+                            <div class="card-custam-img rounded-3 "><img class="rounded-3 "  style="max-width: 100%;" src="PORTimg5.png" alt="">
+                            </div>
+                            <div class="card-custam-content">
+                                <h4>Responsive navbar </h4>
+                            
+                                <a href="#" class="link-custam">HTML,CSS,JS</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="about" class="full-hight px-lg-5">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                        <h6>about</h6>
+                        <h2>My Education & Experiance</h2>
+                    </div>
+                </div>
+                <div class="row gy-5">
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+                        <h3>education</h3>
+                        <div class="row gy-4">
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="700">
+                                <div class="rounded-3 bg-dark shadow-effect p-4">
+                                    <h4>
+                                        University of Lenkeran (LDU)
+                                    </h4>
+                                    <p>My university education was completed at Lenkeran University in Economics between 2015 and 2018.Lenkeran University is a distinguished institution committed to providing high-quality education in a variety of disciplines.</p>
+                                  
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="900">
+                                <div class="rounded-3 bg-dark shadow-effect p-4">
+                                    <h4>
+                                        Independent Learning
+                                    </h4>
+                                    <p>I cultivated my skills through online resources and self-study, mastering various programming languages and frameworks. This includes a comprehensive understanding of HTML, HTML5, CSS, CSS3 Bootstrap5, and JavaScript, Reactjs...</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                        <h3>experiance</h3>
+                        <div class="row gy-4">
+                        <div class="col-12" data-aos="fade-up" data-aos-delay="500">
+                                <div class="rounded-3 bg-dark shadow-effect p-4">
+                                    <h4>
+                                        YouTube Content Creation
+                                    </h4>
+                                    <p>I produce concise and insightful YouTube videos, specializing in web development tutorials, coding tips, and tech insights. Engaging visuals, clear explanations, and hands-on projects cater to diverse audiences, simplifying coding concepts..</p>
+                                </div>
+                            </div>
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="700">
+                                <div class="rounded-3 bg-dark shadow-effect p-4">
+                                    <h4>
+                                        Upwork Freelancer
+                                    </h4>
+                                    <p>I have a proven track record as a freelancer on Upwork, where I've successfully delivered projects by applying my expertise in HTML, CSS, Bootstrap, and JavaScript. My focus on responsive design and effective communication has contributed to high client satisfaction.</p>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+        </section>
+
+
+         <section id="skill" class="full-hight px-lg-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h5 class="text-warning">SKILLS</h5>
+                        <h3>Tools and Technologies I Use</h3>
+                    </div>
+                </div>
+                <div class="row" >
+                    <div class="col-4">
+                        <div class="bg-dark p-4 rounded-3 shadow-effect">
+                            <div class="work" >
+                     <img  src="html-5.png" alt="">
+                     <div class="layer">
+                        <h3>HTML</h3>
+                        <p>HTML is a markup language providing the basic structure to build web pages.</p>
+                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="bg-dark p-4 rounded-3 shadow-effect">
+                         
+                            <div class="work">
+                         <img src="css-3.png" alt="">
+                     <div class="layer">
+                        <h3>CSS</h3>
+                        <p>CSS is a style language used to control layouts, colors, and fonts on pages.</p>
+                    </div>
+                            </div>
+                        </div>
+                    </div>
+                       <div class="col-4">      
+                <div class="bg-dark p-4 rounded-3 shadow-effect">
+               
+                    <div class="work">
+                         <img src="bootstrap.png" alt="">
+                         <div class="layer">
+                            <h3>Bootstrap</h3>
+                            <p>Bootstrap is a CSS framework used to create mobile-responsive web designs.</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-4">      
+                    <div class="bg-dark p-4 mt-1 rounded-3 shadow-effect">
+                   
+                        <div class="work">
+                             <img src="java-script.png" alt="">
+                             <div class="layer">
+                                <h3>JavaScript</h3>
+                                <p>JavaScript is used to create interactive web pages, supporting dynamic content and form validation.</p>
+                            </div>
+                        </div>
+                             
+                    </div>
+                    </div>
+                    <div class="col-4">      
+                        <div class="bg-dark p-4 mt-1 rounded-3 shadow-effect">
+                       
+                            <div class="work">
+                                 <img src="science.png" alt="">
+                                 <div class="layer">
+                                    <h3>React</h3>
+                                    <p>React is a JavaScript library used for building user interfaces, especially effective for single-page applications.</p>
+                                </div>
+                                 
+                            </div>
+                                  
+                        </div>
+                        </div>
+                        <div class="col-4">      
+                            <div class="bg-dark p-4 mt-1 rounded-3 shadow-effect">
+                           
+                                <div class="work">
+                                     <img src="clock.png" alt="">
+                                     <div class="layer">
+                                        <h3>Coming soon.... </h3>
+                                  
+                                    </div>
+                            </div>
+                                        
+                            </div>
+                            </div>
+
+                </div>
+
+            </div>
+        </section> 
+        
+<section id="contact" class="full-hight px-lg-5 ">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h5 class="text-warning">CONTACT</h5>
+               
+            </div>
+        </div>
+        <div class="row  text-center">
+            <div class="col-lg-6 order-lg-2 p-2 ">
+              <h1 class="fw-bold">Contact me</h1>
+                    <p class=""><i class="fa-solid fa-paper-plane p-2"></i>qaziyev90@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone-flip p-2"></i>01718263545</p>
+                    <div class="social-icons">
+                      <a href="https://www.linkedin.com/in/yaver-gazi-8323381a5/"><i class="fa-brands fa-linkedin-in"></i></a>
+                      <a href="https://github.com/YaverGazi"><i class="fa-brands fa-github"></i></a>
+                      <a href="https://www.youtube.com/channel/UCYCfZP-O8ceJKFcvXrPdTjA
+                      "><i class="fa-brands fa-youtube"></i></a>
+                      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <a href="Yavar Gaziyev CV.pdf" class="text-white m-3">Download CV</a>
+                </div>
+         
+            <div class="col-lg-6">
+                <form name="submit-to-google-sheet" action="#" class="row">
+                    <div class="form-group col-md-6">
+                        <input type="text" class="form-control" name="Name" placeholder="enter your name" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="email" class="form-control" name="Email" placeholder="enter email" required>
+                    </div>
+                    <div class="form-group col-md-12 my-2">
+                        <textarea name="Message" rows="5" class="form-control" placeholder="enter your message"></textarea>
+                    </div>
+                    <div class="form-group col-md-12 my-2">
+                        <button type="submit" class="btn btn-brand">Submit</button>
+                    </div>
+                </form>
+                <span id="msg"></span>
+                
+               
+                
+       </div>
+        </div>
+    </div>
+</section>
+
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/1b6951a36e.js" crossorigin="anonymous"></script>
+
+
+    <script>
+        AOS.init({
+            offset: 400,
+            duration: 700
+        });
+
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz2QazwNJ5RAnzkzPxi_BoauuSZ401jf1MEYqzJ-oqFILH8vZ7KDAGNjiSAwRjFLiTQ/exec';
+    const form = document.forms['submit-to-google-sheet'];
+const msg=document.getElementById('msg')
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+             msg.innerHTML="Message sent succesfully";
+             setTimeout(function(){
+                msg.innerHTML=""
+             },5000)
+             form.reset()
+            })
+            .catch(error => console.error('Error!', error.message));
+    });
+</script>
+</body>
+
+</html>
+
+
+
+<!-- 
+Good day, I am Yaver Gazi. I would like to work on your project, and I can provide the details specified in the project description. I am new to freelancing, but I can confidently say that I am knowledgeable enough to finish your required task. I hope to receive a response. Thank you.
+
+Sincerely,
+
+Yaver Gazi -->
